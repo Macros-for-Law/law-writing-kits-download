@@ -1,0 +1,78 @@
+name: Bug report
+description: Something in the SJTEIL Kit or Legal Kit doesn't work the way its hover text or the Tool Library (F10) says.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please **don't paste confidential text**: no unpublished draft passages, client facts,
+        or classmates' work. Describe the problem in your own words or make a tiny sample that shows it.
+  - type: dropdown
+    id: kit
+    attributes:
+      label: Which part?
+      options:
+        - SJTEIL Write tab
+        - SJTEIL Edit tab
+        - Legal Writing tab
+        - Shared tool (Standardize, Help, F2/F3/F8/F9/F10)
+        - Install / Uninstall
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Button or shortcut
+      description: The ribbon button or key you used.
+      placeholder: "e.g. Check Cites, Insert Short Cite (⌃⌥O), F9"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the exact wording of any error message or dialog.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a new Note (New Note)
+        2. Click in footnote 3
+        3. Press ⌃⌥O and type "Smith"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Kit version
+      description: Shown at the top of Read Me First.txt in the folder you installed from.
+      options:
+        - v7
+        - v6 or earlier
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: word
+    attributes:
+      label: Word and macOS versions
+      description: Word > About Microsoft Word, and Apple menu > About This Mac.
+      placeholder: "e.g. Word 16.102, macOS 26.1"
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: This report contains no confidential draft text, client information, or other people's work.
+          required: true

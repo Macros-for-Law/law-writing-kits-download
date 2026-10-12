@@ -1,0 +1,54 @@
+name: Feature request
+description: Suggest a new tool, or a change to an existing one, for the SJTEIL Kit or Legal Kit.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the job you want done and the rule behind it. Cite rule numbers (Bluebook, TLR Manual, Washington
+        style manual, or your assignment instructions); please don't paste text copied from those books or course materials.
+  - type: dropdown
+    id: kit
+    attributes:
+      label: Where would it go?
+      options:
+        - SJTEIL Write tab (drafting your Note)
+        - SJTEIL Edit tab (tech-editing)
+        - Legal Writing tab (memos and briefs)
+        - Both kits
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or the mistake you keep fixing by hand.
+      placeholder: "e.g. I keep checking by hand that every short cite has a full cite in the last five footnotes."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What should the tool do?
+      description: What it would change in the document (or report), whether it should be a button or a shortcut, and whether edits should be tracked.
+    validations:
+      required: true
+  - type: input
+    id: rules
+    attributes:
+      label: Rules involved
+      placeholder: "e.g. Bluebook R. 10.9(a), TLR 4.11"
+  - type: textarea
+    id: example
+    attributes:
+      label: Before / after example
+      description: A short made-up example is best.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: This request contains no confidential draft text, client information, or copied course or manual text.
+          required: true
