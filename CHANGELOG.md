@@ -1,5 +1,39 @@
 # Changelog
 
+## v8 (October 2026): online research checks and Washington briefs
+
+### New
+- **Verify Cites** (both kits; ⌃⌥V on SJTEIL Edit, ⌃⌥⇧V on Legal Writing): checks every citation in your saved draft
+  against free public sources and sends only each citation's own parts, never your text. Cases (CourtListener),
+  federal statutes, regulations, and the Federal Register (GovInfo, eCFR; a dated C.F.R. or U.S.C. cite is checked
+  against that year's edition), executive orders, Washington RCW / WAC and court rules, federal court rules (Cornell
+  LII), bills, committee and CRS reports, agency dockets (Congress.gov, Regulations.gov, Open States), articles and
+  books (OpenAlex, Crossref, Open Library), Restatements (series and subject), web links (with Internet Archive
+  copies of dead links), and your own short forms, *Id.*, supra, and infra. Choose what to check and what to produce:
+  **T** tracked fixes (only one-answer fixes: a reporter spelling, a Federal Register date, an executive order's first
+  page), **C** `[Cite Verify]` comments, **R** a report. Westlaw / Lexis numbers and other states' statutes are listed
+  as not checkable. Results are cached on your Mac for 30 days.
+- **Pull Source** (⌃⌥J / ⌃⌥⇧J): opens the free copy of the citation at the cursor (CourtListener, GovInfo, eCFR,
+  Congress.gov, court rules, the state's code site, or the web page).
+- **Research Accounts** menu: set up free keys (CourtListener for cases; optional api.data.gov, OpenAlex, Open States),
+  stored only in your Keychain. **Check Connections** tests every service and lists what it covers and its limits.
+- **Build Cite Table** (SJTEIL Edit › Footnotes): one row per citation in your assigned footnotes, with type, pincite,
+  Perma link, and Verify Cites status, ready to paste into Excel.
+- **Check Cites** adds reporter-abbreviation fixes (from Free Law Project's reporters-db), signal commas, and a
+  pincite-before-first-page check, each with a tracked fix or comment as you choose (T / C / R).
+- **Washington briefs** (Legal Writing): Court of Appeals and trial-court motion brief outlines, **Check Record Cites**
+  (CP / RP form, ranges, uncited facts), **Certify Word Count** (RAP 18.17), **Mark Authority** and **Insert Table of
+  Authorities** with brief headings, and brief checks in Check Memo (format, word limit, sections).
+- **Anonymize Copy** also highlights personal data (email addresses, phone numbers, IP addresses, SSN-shaped numbers).
+
+### Changed
+- Checks and scans skip text inside web addresses (a Perma ID's hyphen is not a range).
+- Every check that can change your draft asks once what to produce (T / C / R) and remembers your answer per tool.
+
+### Privacy
+- Verify Cites, Check Connections, Pull Source, and Find Rule's Washington rules are the kits' new network uses; see the
+  Read Me's Privacy section for the exact services. Nothing goes out unless you run one of them.
+
 ## v7 (October 12, 2026): first release on GitHub
 
 ### New
