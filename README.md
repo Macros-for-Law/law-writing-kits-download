@@ -13,9 +13,14 @@ Press **F10** in Word for the Tool Library: every tool, its shortcut, and exactl
 
 ## Install
 
-The download page is invite-only: sign in to GitHub with the account you were invited with (accept the invitation email first).
+**Fastest:** quit Word, open Terminal, paste this line, and press Return (it downloads the latest version and runs the installer; no security prompts):
+```
+cd /tmp && curl -fsSLo lwk.zip https://github.com/Macros-for-Law/law-writing-kits-download/releases/latest/download/Law-Writing-Kits.zip && rm -rf "Law Writing Kits" && unzip -q lwk.zip && bash "Law Writing Kits/Install.command"
+```
 
-1. **Download** `Law-Writing-Kits-v8.zip` from the [latest release](https://github.com/Macros-for-Law/law-writing-kits-download/releases/latest) (Assets) and double-click it to unzip. You get a **Law Writing Kits** folder.
+Or by hand:
+
+1. **Download** [`Law-Writing-Kits.zip`](https://github.com/Macros-for-Law/law-writing-kits-download/releases/latest/download/Law-Writing-Kits.zip) from the [latest release](https://github.com/Macros-for-Law/law-writing-kits-download/releases/latest) (Assets) and double-click it to unzip. You get a **Law Writing Kits** folder.
 2. If you have never opened Word on this Mac, open it once. Then **quit Word**.
 3. In the folder, **double-click `Install.command`**. A Terminal window opens; answer its question (if any) and press Return at the end.
    - If macOS says it can't verify `Install.command` (the kit isn't from the App Store): click **Done**, open **System Settings › Privacy & Security**, scroll to **Security**, click **Open Anyway** next to "Install.command", then **Open**, and enter your Mac password if asked. (macOS 14 or earlier: right-click `Install.command` › Open › Open.)
