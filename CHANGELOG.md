@@ -1,5 +1,20 @@
 # Changelog
 
+## v8.3 (October 2026): every part of a citation
+
+### New
+- **Check Cites: citation structure** (both kits). Each case citation is checked for all its parts. A full citation
+  missing its volume, reporter, first page, or the comma before the volume says which part is missing; one that starts
+  with no case name, or repeats a case without its second party, gets a check. A short form of a case cited in full
+  earlier (Byrne, 328 F.3d at 382) that is missing its volume, reporter, "at", pincite, or the comma after the name, or
+  that keeps the first page (328 F.3d 379, at 382), is flagged, and with T the fix is a tracked change, since the full
+  citation gives the right volume and reporter. *Id.* with no "at" (Id. 382) gets a tracked "at"; "Id. at" with no page
+  is flagged.
+
+### Fixed
+- **Check Cites**: a full citation missing its reporter (328 379, 382) or first page (328 F.3d, 382) said "no pincite";
+  it now says which part is missing.
+
 ## v8.2.1 (October 2026): missing pincites and a date-check fix
 
 ### New
