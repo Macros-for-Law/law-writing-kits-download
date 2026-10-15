@@ -1,5 +1,19 @@
 # Changelog
 
+## v8.2.1 (October 2026): missing pincites and a date-check fix
+
+### New
+- **Check Cites: missing pincite** (both kits). A full case citation with its date parenthetical but no pincite gets a
+  check item (BB R. 3.2(a); Bluepages B10.1.2). Not flagged: a case named in your own sentence ("In Smith v. Jones, ...,
+  the court"), See generally, short forms, Westlaw / Lexis numbers, and Table of Authorities lines.
+
+### Fixed
+- **Check Cites**: a citation whose pincite and date were deleted ("328 F.3d 379,." once Word closes up the space) is
+  flagged for its missing date again; it was skipped as not a citation.
+- **Check Cites**: Table of Authorities lines typed by hand (dot leaders or a tab before the page numbers) are skipped
+  by the date and pincite checks.
+- **Verify Cites**: with a stray comma left before the period, a missing date is a comment, not a tracked insertion.
+
 ## v8.2 (October 2026): citation dates and case names in italics
 
 ### New

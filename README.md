@@ -1,4 +1,4 @@
-# Law Writing Kits: SJTEIL Kit + Legal Kit (v8.2)
+# Law Writing Kits: SJTEIL Kit + Legal Kit (v8.2.1)
 Two add-ins for **Microsoft Word on a Mac** that add three ribbon tabs:
 
 | Tab | For |
