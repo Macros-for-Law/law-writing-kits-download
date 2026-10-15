@@ -1,5 +1,50 @@
 # Changelog
 
+## v8.1 (October 2026): Kit Settings, private copies, and fewer false positives
+
+### New
+- **Kit Settings** (Help, both kits): defaults for every document on your Mac. SJTEIL Kit: your journal (SJTEIL, Law
+  Review, SJSJ, AILJ, other), style manual (TLR Manual + Bluebook, or Bluebook only), Note length, the mode a new Note
+  opens in, check output letters, shared documents, and Perma folders. Legal Kit: output letters, shared documents, and
+  the citation style and From line for new documents. Asked once, the first time you use a kit tool.
+- **P = private local copy** in the output question of Check Cites, Check Style, Verify Cites, Check Record Cites, and
+  Check Memo: tracked fixes and comments go into a dated copy in Documents › Law Writing Kits › Local Copies, so a shared
+  Teams or OneDrive document isn't touched. Bring work back by copying the fixes you keep, or Review › Compare › Combine.
+- **Preemption Check** (SJTEIL Write › Count & Check › More Checks): searches OpenAlex for articles that may overlap your
+  topic (only your search terms are sent, after you confirm), opens Google Scholar and SSRN searches, and logs the date
+  and terms in your draft; Check Note shows the last check.
+- **Check Cites** (Bluebook 22d): page spans keep only the last two digits (tracked fix), no "at" before § (tracked fix),
+  §§ for several sections and no et seq., an explanatory parenthetical after See also, Cf., But cf., Compare, Contrast,
+  and See generally, Inc. after Co. or Corp., the regional reporter only for Washington cases in law reviews and
+  Bluebook memos, aff'd / rev'd / cert. denied (tracked fix), U. for Univ. in journal titles, and 24-hour timestamps.
+- **Find Rule**: 23 more topics (citation sentences, business firm designations, parallel and public-domain citations,
+  briefs and court filings, ordinances, bills, agency adjudications, state administrative materials, manuscripts,
+  working papers, web timestamps, treaties, U.N. documents, tribal nations, tables T2-T4, T8, T9) and updated summaries.
+
+### Changed
+- **Add Perma Link** asks which Perma.cc folder each link goes in (Return = the last one; pick another; a new subfolder,
+  created only when you OK the archive). Kit Settings can turn the question off.
+- **Build Cite Table** lists the footnotes that cite books first, so you can request them early.
+- **Brief outlines** (Legal Writing): each argument point gets separate prompts (topic sentence, rule, case groups with
+  a PBTS, argument with record cites, mini-conclusion) and the Argument starts with a roadmap; CREAC prompts match.
+- **Pull Source** opens Washington bills (bill summary) and U.N. documents (by symbol).
+- **Check Style** (both kits) skips citation sentences (Id., Smith v. Jones, 1 F.3d 2 ...) and doesn't count quoted
+  words or a citation inside a sentence toward sentence length; the report shows how many citation sentences it skipped,
+  so the readability numbers measure your own prose.
+
+### Fixed
+- **Check Cites**: "spell out Section at the start of a sentence" no longer fires on 29 U.S.C. §, C.F.R. §, Id. §, or
+  Wash. Prac. §; "v., not vs." no longer fires outside case names (federal vs. state).
+- **Check Style**: "rather than" is no longer flagged as a hedge; aff'd and rev'd are not contractions; you / your are
+  not flagged in letters and emails (Dear ...); stative wording (was entitled, is based) is not flagged as passive voice;
+  "is required to" gets one comment, not two.
+- **Sentence reading** (Check Style, Check Memo, Check Record Cites): Id. followed by a new sentence ends its own
+  citation sentence, and abbreviations in citations (U.S.C., C.F.R., Jud., Cnty., Att'y ...) no longer split one.
+  Check Record Cites counts an Id. citation as the record cite for the facts before it; Check Memo reads "Similarly,
+  just as in [case], ..." as an analogy, not another case description.
+- **Verify Cites**: a real case that CourtListener has by name but without its reporter citation is a check item
+  ("confirm the volume and page"), not "Not found".
+
 ## v8 (October 2026): online research checks and Washington briefs
 
 ### New

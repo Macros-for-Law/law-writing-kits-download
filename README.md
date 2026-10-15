@@ -1,4 +1,4 @@
-# Law Writing Kits: SJTEIL Kit + Legal Kit (v8)
+# Law Writing Kits: SJTEIL Kit + Legal Kit (v8.1)
 Two add-ins for **Microsoft Word on a Mac** that add three ribbon tabs:
 
 | Tab | For |
@@ -9,7 +9,9 @@ Two add-ins for **Microsoft Word on a Mac** that add three ribbon tabs:
 
 Both kits also have **Verify Cites** and **Pull Source**: free online checks of every citation (cases, statutes, regulations, court rules, executive orders, bills, reports, dockets, articles, books, Restatements, web links) that send only the citation's parts, never your text.
 
-Press **F10** in Word for the Tool Library: every tool, its shortcut, and exactly what it does. Hovering over a button shows the same description.
+Press **F10** in Word for the Tool Library: every tool, its shortcut, and exactly what it does. Hovering over a button shows the same description. **Help › Kit Settings** sets each kit's defaults (your journal, style manual, check output letters, shared documents, Perma folders).
+
+Working in a shared Teams or OneDrive document? Add **P** to a check's letters: its tracked fixes and comments go into a private local copy, and the shared document is not touched.
 
 ## Install
 
@@ -45,6 +47,7 @@ Optional: Word › Settings › View › Ribbon › *Show group titles*, and Sys
 Everything runs on your Mac except tools you start that go online:
 - **Add Perma Link / Perma Setup** send the URL being archived and your Perma.cc API key to api.perma.cc.
 - **Verify Cites / Check Connections** send only each citation's own parts (a case's volume, reporter, and page; a code section; an article title; a URL), never your text, to free public services: CourtListener, GovInfo, eCFR, the Federal Register, the Washington Legislature and courts.wa.gov, Cornell LII, Congress.gov, Regulations.gov, Open States, OpenAlex, Crossref, Open Library, the Internet Archive, and the cited site. Results are cached on your Mac for 30 days.
+- **Preemption Check** (SJTEIL Kit) sends only the search terms you type to api.openalex.org, after you confirm, and opens Google Scholar and SSRN searches with those terms in your browser.
 - **Pull Source** and **Find Rule** open a page in your browser.
 
 Keys are stored only in your Mac's Keychain. Check Cites' reporter rules are generated from Free Law Project's [reporters-db](https://github.com/freelawproject/reporters-db) (BSD 2-Clause).
@@ -53,6 +56,9 @@ Keys are stored only in your Mac's Keychain. Check Cites' reporter rules are gen
 Open the **[Issues](https://github.com/Macros-for-Law/law-writing-kits-download/issues)** tab › **New issue** › *Bug report* or *Feature request*. Please don't paste confidential draft text, client facts, or text copied from the Bluebook, TLR Manual, or course materials; rule numbers are enough.
 
 To see where a suggestion stands, check its label (**planned**, **considering**, **not planned**, **shipped**) and the pinned [Roadmap](https://github.com/Macros-for-Law/law-writing-kits-download/issues/1) issue.
+
+## Roadmap
+- **Journals:** SJTEIL first, then Law Review, then SJSJ, then AILJ. Each journal gets its own Kit Settings profile (style manual, checks, word limits, Perma folders) once its editors share their style sheet, tech-edit checklist, and templates. Until then, journals other than SJTEIL use Bluebook-only defaults.
 
 ## Shortcuts (⌃ is Control, not ⌘)
 - F2 Paste Plain · F3 Join Lines · F4 Body Text · F5/F6 Italicize/Unitalicize Case · F7 Id. · F8 Count Selection ·
