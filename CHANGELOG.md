@@ -1,5 +1,28 @@
 # Changelog
 
+## v8.2 (October 2026): citation dates and case names in italics
+
+### New
+- **Check Cites: date parentheticals** (both kits). A full case citation with no court-and-year parenthetical is flagged
+  (BB R. 10.4, 10.5), and an F.3d / F.4th or F. Supp. citation whose parenthetical has no circuit or district gets a check.
+- **Verify Cites: dates** (both kits). A verified case whose date parenthetical is missing, or gives a different year than
+  CourtListener's, is a check item; with T, a missing one is added after the pincite as a tracked change (the court comes
+  from one CourtListener search, made only for those citations).
+- **Check Cites: case names in italics** (Legal Kit). The full name is checked from the party before v. to the party after
+  it (an italic v. no longer passes a roman name), and a case cited in full keeps its name italic in short forms (a finding)
+  and in later mentions (a check, since a party or witness can share the name).
+
+### Changed
+- **Check Cites: section in citations** (both kits). "section" or "Sec." right after U.S.C. or C.F.R. is flagged in the
+  body, not just footnotes, with a regular or non-breaking space ("Under section 2615, ..." in a sentence is left alone).
+  In Washington style "U.S.C. section" is a check, since the Style Sheet allows the word in text for U.S.C. sections.
+- **Washington-style memos** get the page-span, "at" before §, §§, and et seq. checks too: the Washington Style Sheet makes
+  no exception to those Bluebook rules.
+
+### Fixed
+- **Check Cites**: underlined case names (allowed in Bluebook-style memos) are no longer flagged as not italic. In
+  Washington style, where the Style Sheet wants italics, they still are.
+
 ## v8.1 (October 2026): Kit Settings, private copies, and fewer false positives
 
 ### New
