@@ -1,5 +1,23 @@
 # Changelog
 
+## v8.4 (October 2026): comments a first-year can act on
+
+### Changed
+- **Check Cites: Washington Reports with the parallel P.3d** (Bluebook mode). The comment now asks who will read the
+  document: Washington courts and classes that teach the Washington Style Sheet keep both reporters (and the comment says
+  where to switch: Assignment Settings > Citation style); strict Bluebook cites the P.3d only. It rebuilds your own
+  citation (State v. Smith, 405 P.3d 997, [P.3d page] (Wash. 2017)) and warns that a Wn.2d pincite is not a P.3d page.
+- **Comments that may be fine as written** now start "Possible issue:" instead of "check:", and the Check Cites report
+  says what that means.
+- **Legal Kit: no TLR Manual references.** Check Style labels read Verbosity, Legalese, Qualifier, Informal, Passive
+  voice, Style tip; the doubled-period comment is labeled Punctuation; "Read:" no longer points to TLR pages.
+- **Legal Kit: memo wording** in the Kit summaries for signals (R. 1.2), Id. (R. 4.1), numbers (R. 6.2), and websites
+  (R. 18.2), which were written for law-review footnotes and SJTEIL; six more (R. 3.2, 3.3, 5.3, 8, 16.6, 18.3) drop
+  their TLR or SJTEIL sentence.
+- **Check Cites report** (Legal Kit, Bluebook mode) names the citation style and where to change it.
+- Clearer wording: supra (no comma between supra and note), (citation modified), a repeated full citation with one
+  party, and the missing-date example for P.2d / P.3d cases ((Wash. 2019), (Wash. Ct. App. 2019)).
+
 ## v8.3 (October 2026): every part of a citation
 
 ### New
