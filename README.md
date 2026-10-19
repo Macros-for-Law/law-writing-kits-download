@@ -57,9 +57,6 @@ Open the **[Issues](https://github.com/Macros-for-Law/law-writing-kits-download/
 
 To see where a suggestion stands, check its label (**planned**, **considering**, **not planned**, **shipped**) and the pinned [Roadmap](https://github.com/Macros-for-Law/law-writing-kits-download/issues/1) issue.
 
-## Roadmap
-- **Journals:** SJTEIL first, then Law Review, then SJSJ, then AILJ. Each journal gets its own Kit Settings profile (style manual, checks, word limits, Perma folders) once its editors share their style sheet, tech-edit checklist, and templates. Until then, journals other than SJTEIL use Bluebook-only defaults.
-
 ## Shortcuts (⌃ is Control, not ⌘)
 - F2 Paste Plain · F3 Join Lines · F4 Body Text · F5/F6 Italicize/Unitalicize Case · F7 Id. · F8 Count Selection ·
   F9 Show/Hide Scaffolding · F10 Tool Library · F11 Track Changes · F12 Tech-Edit Mode
