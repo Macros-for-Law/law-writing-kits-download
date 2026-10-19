@@ -1,5 +1,69 @@
 # Changelog
 
+## v8.5 (October 2026): law-review footnotes, memo misses, and two tech-edit fixes
+
+### Fixed (SJTEIL Kit)
+- **Scan Numbers no longer edits a supra's footnote number.** In "supra note 2" made with Insert Supra, the 2 is a
+  live cross-reference; the scan used to offer to spell it out (supra note two), breaking the link. Every scan now
+  skips text inside a field, and the footnote log no longer shows field code next to an edit.
+- **Serial Commas works.** The scan never found a series in Word. It now asks at a clear list missing its serial
+  comma: three or more short items (price fixing, division of markets, group boycotts and tying) or one-word items
+  (large, unregulated and unprotected). On nine journal articles it asked about 2 times per article. A three-item list
+  with longer items is not caught.
+
+### New (SJTEIL Kit): Check Cites for law-review footnotes
+- **Periodical names in small caps.** A journal name between its volume and first page (41 Harbor L. Rev. 1101) that is
+  not in small caps draws a finding; T applies Small Caps as a tracked formatting change (names typed in capitals are
+  only flagged). A roman article title right before it is a check item.
+- **More italics:** lowercase id. (see id.), See, e.g., and In re / Ex parte case names in a full footnote citation
+  (a check item, like the v. names).
+- **supra and hereinafter:** supra 4 and supra n. 4 become supra note 4 (tracked); supra note N that points to this
+  footnote or a later one, or to a footnote that does not mention the name, is a check item (Insert Supra keeps the
+  number current); supra for a case is a check item; (hereinafter X) becomes [hereinafter X] and a roman hereinafter
+  is italicized (both tracked).
+- **Id. after a string citation:** a footnote that starts with Id. right after a footnote with more than one authority
+  is a check item.
+- **En dash ranges in article pages** (315-22) are now read; Pub. L. numbers still keep their hyphens.
+- **Footnote periods:** a nonbreaking space after the final period no longer draws a false finding, and a period
+  typed inside a closing parenthesis ((2d Cir. 2024.), (2d ed.)) no longer counts as the footnote's period.
+
+### New (both kits): law-review footnotes
+- **Perma.cc per URL:** each URL needs its own bracketed Perma.cc link, not one per footnote.
+- **v. followed by a nonbreaking space** gets every v.-based check (date, pincite, citation shape, typeface).
+- **(accessed** becomes **(last visited**, and **Fed. R. Evid. Rule 901** becomes **Fed. R. Evid. 901** (tracked);
+  two authors joined by and before an italic title is a check item (use &).
+
+### New (both kits): Check Cites catches the errors it missed most in memos
+- **No period before a citation:** a closing quotation mark right before a citation (T puts the period inside the
+  quotation marks), a capital Id. right after a lowercase word (T adds the period), and a check item when a full
+  citation follows a lowercase word that does not lead into a case name.
+- **See Id.:** Id. after a signal or citing / quoting is lowercase (T fixes it).
+- **citing / quoting outside a parenthetical:** after a pincite, a closing parenthesis, or Id., it goes in its own
+  parenthetical.
+- **Case-name abbreviations (T6):** words such as Department, Office, Attorney, Corporation in a full citation's case
+  name; in a sentence that names the case, only Corporation, Company, Association, Brothers, Incorporated, Limited,
+  Number, and. T fixes a name with one such word.
+- **Short form with a date** now draws a finding in Bluebook mode too (it did only in Washington mode); T deletes the
+  parenthetical. **at before a full citation's pincite** (575, at 583): T deletes at.
+- **In re / Ex parte** cites get the date, pincite, and citation-shape checks, and their short forms are checked.
+- **Government parties:** when the first party is an office, district, county, or attorney, the short name is the
+  other party (Check Cites and Insert Short Cite).
+
+### Fixed (both kits)
+- **Short forms on the line after a full citation** are checked now: the short-form check no longer reads back into
+  the previous paragraph's full citation (or ahead into the next paragraph's case name) and skips the short form.
+- **Short form with a date** no longer fires on a full citation to a numbered title (Annual Report 1990-1995, at 12
+  (1996)); a full case citation with at before its pincite (999 F. Supp. 938, at 940) gets the at finding instead.
+
+### New (Legal Kit): two Check Memo checks
+- **Check Memo: missing roadmap** (Legal Kit, memos). When the general rules (the Legal Standard section, or the
+  opening of the Discussion) never say which elements are undisputed and which the memo analyzes, Check Memo adds one
+  comment on the heading where the roadmap belongs. A short one-part Discussion with no sub-headings is not checked,
+  and neither are briefs (their Summary of Argument does that job).
+- **Check Memo: more first-person forms.** "We can rely", "we could rely", "we would rely", "we should rely", "we rely
+  on", "we can point to", and "we could point to" are flagged like "we can argue". "We can show" is left alone, since
+  a client letter uses it for the firm.
+
 ## v8.4 (October 2026): comments a first-year can act on
 
 ### Changed
