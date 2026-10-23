@@ -1,5 +1,50 @@
 # Changelog
 
+## v8.6 (October 2026): Page Fit, case names, quotation and footnote-mark checks, safer Check Cites
+
+### Removed (both kits)
+- **Count Selection (F8)** is gone from both ribbons and the shortcut is unbound. Word's status bar shows the selected
+  words; Count Words (Legal) still reports the selection, and Count Body Words (SJTEIL) is unchanged.
+
+### New (Legal Kit)
+- **Check Page Fit** (Count & Check): pages against the limit, the lines and words past it, where each Heading 1-2 section
+  starts and how long it runs, and the three longest paragraphs. Read-only; it never touches margins, fonts, or spacing.
+- **Italicize All Cases** (Format): every Name v. Name, and later one-word mentions of a case, after a confirm that gives the
+  counts. A short name two cases share, and titles like Judge Ortega, are skipped.
+- **Index Case Names** (Cite): hidden Table of Authorities marks (Cases) on each mention, then a Table of Cases at the cursor.
+
+### New (Check Cites)
+- **Quotation without a source** (both kits): a quotation of 8 or more words with no footnote after it (SJTEIL) or no citation
+  or footnote (Legal) is a check item. A quotation inside a parenthetical is skipped. Block quotations are not checked.
+- **Footnote mark placement** (SJTEIL Kit): a footnote number before a comma, period, semicolon, or closing quotation mark, or
+  two numbers in a row, is a check item (a dash is the exception). Neither rule names a rule number.
+  On the nine unedited journal articles (1,434 footnote numbers): 10 quotation items and 31 mark items.
+
+### New (Check Cites, both kits): one run, shorter comments, CourtListener
+- **One run, no hidden findings.** Findings are collected first and written at the end, so a tracked fix never hides a later
+  check on the same citation. A warning appears when tracked deletions are still pending (Word keeps deleted text visible to a
+  macro).
+- **Comments say what to fix:** the faulty part is shaded, and the comment reads title, the citation as written, the fix, then
+  the rule and where to read it. The R. 1.2 summary now lists every signal.
+- **V (new output letter): CourtListener check.** Looks up each full case citation and compares court, year, and name; a
+  wrong year is a tracked fix. Only the volume, reporter, and first page are sent, and only when you choose V and have set up
+  your own CourtListener token (Research Accounts).
+
+### New (SJTEIL Kit)
+- **Check Note lists each [VERIFY]** with its page or footnote and the words around it (the first 15).
+
+### Fixed
+- **A run-time error no longer loses a whole Check Cites or Check Style run.** Each rule that fails is skipped and named in
+  the report; an error anywhere else keeps the findings so far, puts Track Changes, screen updating, and the status bar back,
+  and says what stopped. Before, such an error left Track Changes on.
+- **Check Cites: a citation with no second party** (Smith v. 123 F.3d 45) raised error 5 in the missing-volume check.
+- **Check Record Cites / brief checks (Legal Kit): three Mid$ errors** when a paragraph starts with ER, RCW, RAP, CR, or GR
+  and a number, or when a page range runs to the start of the text.
+- **Check Memo's page count** could read a page short (the page-count statistic lags the layout in current Word): the page the
+  last character sits on is now the floor, so a 2-page memo no longer passes a 1-page limit. Check Page Fit uses the same count.
+- Verify Cites says when it stopped at 300 distinct cases; the pending-deletions count reads each revision once.
+- `shared/lint_vba.py` now flags an And / Or whose right side slices with a subtracted index (VBA runs both sides).
+
 ## v8.5 (October 2026): law-review footnotes, memo misses, and two tech-edit fixes
 
 ### Fixed (SJTEIL Kit)

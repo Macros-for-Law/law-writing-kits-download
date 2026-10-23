@@ -1,4 +1,4 @@
-# Law Writing Kits: SJTEIL Kit + Legal Kit (v8.5)
+# Law Writing Kits: SJTEIL Kit + Legal Kit (v8.6)
 Two add-ins for **Microsoft Word on a Mac** that add three ribbon tabs:
 
 | Tab | For |
@@ -58,12 +58,12 @@ Open the **[Issues](https://github.com/Macros-for-Law/law-writing-kits-download/
 To see where a suggestion stands, check its label (**planned**, **considering**, **not planned**, **shipped**) and the pinned [Roadmap](https://github.com/Macros-for-Law/law-writing-kits-download/issues/1) issue.
 
 ## Shortcuts (⌃ is Control, not ⌘)
-- F2 Paste Plain · F3 Join Lines · F4 Body Text · F5/F6 Italicize/Unitalicize Case · F7 Id. · F8 Count Selection ·
+- F2 Paste Plain · F3 Join Lines · F4 Body Text · F5/F6 Italicize/Unitalicize Case · F7 Id. ·
   F9 Show/Hide Scaffolding · F10 Tool Library · F11 Track Changes · F12 Tech-Edit Mode
 - ⌃⌥ + Q D W E L G K A (Standardize), B Count Body Words, C Check Cites, S Check Style, R Add Rule, F Add Flag,
   U Insert Supra, O Insert Short Cite, H Add Perma Link, I [sic], N/M en/em dash, P Post Footnote Notes, X Run All Scans,
   ↑/↓ Move Section
 - Legal: ⌃⌥⇧ + 1–4 headings, B block quote, N case name, G signal, I Id., O Insert Short Cite, 7 §, P ¶, T mark authority,
   W word count, M Check Memo, C Check Cites, S Check Style. Word built-ins: ⌘⌥1–3 headings, ⌘⌥O Outline view (drag headings), ⌘⌥⇧V plain paste.
-- F2, F3, F8, F9, F10 and Standardize are bound by both kits with identical behavior.
+- F2, F3, F9, F10 and Standardize are bound by both kits with identical behavior.
 - On a Mac with the Claude for Word add-in, ⌃⌥C is also its shortcut; Word asks which to run. Use the Check Cites button.
