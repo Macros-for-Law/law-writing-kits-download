@@ -37,7 +37,7 @@ Optional: Word › Settings › View › Ribbon › *Show group titles*, and Sys
 ### Requirements
 - A Mac with Word for Microsoft 365, or Office 2019 or later. Windows is not supported.
 - Sync Tracker, Add Source, Add Perma Link, Verify Cites, Pull Source, Build Cite Table, and Anonymize Copy also use Apple's free Command Line Tools (the installer checks; to add them, run `xcode-select --install` in Terminal).
-- Add Perma Link needs your own Perma.cc account; Verify Cites needs a free CourtListener account to check cases (other keys are optional). Find Rule opens your own Bluebook (22d) and TLR Manual PDFs; the kits contain no text from either book.
+- Add Perma Link needs your own Perma.cc account; Verify Cites needs a free CourtListener account to check cases (other keys are optional). Find Rule opens your own PDFs: use your own copy of the Bluebook (22d), the TLR Manual (15th), and the Washington OAH Style Manual. The kits contain no text from them and link to no copies. The Washington style sheet is a public court rule: [GR 14 Appendix 1](https://www.courts.wa.gov/court_rules/pdf/GR/GA_GR_14_Appendix.pdf).
 
 ### Update or uninstall
 - **Update:** download the new release, quit Word, and run its `Install.command` the same way. It replaces the add-ins and tools and asks before replacing your Note template (your copy is backed up).
