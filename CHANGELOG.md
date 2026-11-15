@@ -1,5 +1,68 @@
 # Changelog
 
+## v8.7 (November 2026): Windows beta, two Washington citation styles, fewer repeated comments, faster Check Cites
+
+### Windows (beta)
+- **The kits now run in Word for Windows** (Microsoft 365, or Office 2019 or later; Windows 10 or 11). Download
+  `Law-Writing-Kits-Windows.zip`, extract it, close Word, and double-click **Install**. It copies files into your own
+  user folders only: no administrator password, and no Windows or Word setting changes. **Uninstall** removes them and
+  asks before removing your template, backups, saved keys, and Kit Settings.
+- The zip carries its own private copy of Python for Sync Tracker, Verify Cites, Add Perma Link, Find Rule page jumps,
+  and Anonymize Copy. Keys are kept in Windows Credential Manager.
+- Shortcuts are the Mac ones with **Ctrl+Alt** for Control+Option. Two differ so Word keeps its own: Add Flag is
+  Ctrl+Alt+Shift+F and Make Em Dash is Ctrl+Alt+Hyphen.
+- **Why beta:** tested on one laptop (Windows 11, 64-bit Word, a school account): build, compile, every regression case,
+  the installer and uninstaller, and Find Rule. See the release notes for what has not been tested on Windows yet.
+- Find Rule on Windows reads the page count of any PDF (a scanned Bluebook and a compressed style sheet read as 0
+  pages before), so it can warn about a different edition.
+
+### Two Washington citation styles (Legal Kit)
+
+- **Washington: Exceptions to Bluebook** is a new citation style (Assignment Settings > 4, and Kit Settings for the default).
+  It follows GR 14 Appendix 1, the Reporter of Decisions style sheet: a Wn.2d, Wn.3d, or Wn. App. cite stands alone (no
+  parallel P.3d cite is asked for), Wash. is the first series, a Washington case cited only to P.2d / P.3d is a check item
+  (exc. 9), a year after a current RCW section is a check item (exc. 13), and comments cite the sheet's exception numbers.
+  Check Style adds one note per document for % and one for numbers in text (exc. 4, 5).
+- **Washington Style Manual** is the new name of the old "Washington Style Sheet" style, which follows the OAH Style
+  Manual's citation guide (Wn.2d with the parallel P.3d; pincite after the Washington page). Its checks are unchanged,
+  and documents already set to it keep it; comments now say WA Style Manual. Both Washington styles know Wn.3d.
+- **Washington brief outlines** set Exceptions to Bluebook when the document has no citation style (was the manual style).
+- **Find Rule** has 12 topics for the sheet and keeps the manual's topics; a document set to one Washington style lists
+  that style's topics. The sheet (3 pages) and the manual (28 pages) are separate PDFs, each remembered on its own.
+- Fixture WX Cite Test; word_regress cases "cites WX" and "style WX" (29 cases).
+
+### Fewer comments, same information (both kits)
+- **One comment for a repeated typeface finding** (Check Cites): Id., supra, or a signal that is not italic 10 or more times
+  (or Id. never italic or underlined anywhere, 3 or more times) gets one comment at the first place, with the count. T
+  still fixes every place, and the report lists each one, marked [report only].
+- **Passive voice** (Check Style): a comment only where a paragraph has two or more possible passives (one comment names
+  them). A single passive is listed in the report, with the count and the rate per 1,000 words.
+- **Sentence length** (Check Style): a comment at 50 words or more; sentences of 41-49 words are listed in the report only.
+- **The test's own words** (Check Style): a style word is skipped when the same two-word phrase appears inside quotation
+  marks elsewhere in the document ("actually used").
+- **Legal Kit:** the "who will read this?" Washington note is no longer a finding; the report's Citation style line says it.
+- **SJTEIL Kit:** one comment per name and footnote for "footnote N does not mention Name"; 10 or more hyphen page ranges
+  become one report line that points to Scan Ranges; a section number that continues a list of sections is not a range.
+- The report's FINDINGS line now ends with "Report only: N" when some findings have no comment.
+
+### New checks
+- **Quotation marks that do not pair up**, and **a run-in quotation of 50 or more words** (BB R. 5.1(a); TLR 7.06), in
+  Check Cites, both kits. Comments only. A quotation that runs over several paragraphs is fine.
+- **A semicolon or colon inside a closing quotation mark** (TLR 1.08): T moves it outside as a tracked change.
+- **Legal Kit, Check Style:** a court called they / their; ", however," or ", therefore," between two full sentences.
+- **Both kits, Check Style:** an abbreviation used before the parenthetical that defines it (TLR 1.05(b)).
+- **Legal Kit, Check Memo:** optional page-format lines (Assignment Settings 9) and the Brief Answer's opening word
+  (Assignment Settings 10), both off by default; "outcome but no reasoning" accepts more ways of giving the reasoning.
+- **SJTEIL Kit: Insert Sub Edit Memo** (SJTEIL Edit > Report): a Sub Edit Memo outline in a new document.
+
+### Fixed and faster
+- A closing quotation mark followed by a case name with no reporter cite, and a Washington cite with a no-break space, no
+  longer raise an error inside Check Cites (the match was skipped and the report carried an error note).
+- Check Cites and Check Style skip the search for any plain pattern that is nowhere in the text, and footnote numbers are
+  looked up from a list built once per run.
+- The helper script refuses arguments that hold anything but letters, digits, spaces, and hyphens.
+- Removed three unused procedures.
+
 ## v8.6 (October 2026): Page Fit, case names, quotation and footnote-mark checks, safer Check Cites
 
 ### Removed (both kits)

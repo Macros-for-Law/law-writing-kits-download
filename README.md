@@ -1,5 +1,5 @@
-# Law Writing Kits: SJTEIL Kit + Legal Kit (v8.6)
-Two add-ins for **Microsoft Word on a Mac** that add three ribbon tabs:
+# Law Writing Kits: SJTEIL Kit + Legal Kit (v8.7)
+Two add-ins for **Microsoft Word on a Mac or a Windows PC** (Windows is in beta) that add three ribbon tabs:
 
 | Tab | For |
 |---|---|
@@ -13,7 +13,9 @@ Press **F10** in Word for the Tool Library: every tool, its shortcut, and exactl
 
 Working in a shared Teams or OneDrive document? Add **P** to a check's letters: its tracked fixes and comments go into a private local copy, and the shared document is not touched.
 
-## Install
+**Which computer?** [Mac](#install-on-a-mac) · [Windows (beta)](#install-on-windows-beta)
+
+## Install on a Mac
 
 **Fastest:** quit Word, open Terminal, paste this line, and press Return (it downloads the latest version and runs the installer; no security prompts):
 ```
@@ -34,23 +36,51 @@ Optional: Word › Settings › View › Ribbon › *Show group titles*, and Sys
 
 **Read Me First.txt** in the folder covers first steps, Verify Cites and Research Accounts, Find Rule, Source Tracker sync, Perma.cc links, Washington briefs, Anonymize Copy, privacy, and troubleshooting (also attached to each release as Read-Me-First.txt).
 
-### Requirements
-- A Mac with Word for Microsoft 365, or Office 2019 or later. Windows is not supported.
+### Requirements (Mac)
+- A Mac with Word for Microsoft 365, or Office 2019 or later.
 - Sync Tracker, Add Source, Add Perma Link, Verify Cites, Pull Source, Build Cite Table, and Anonymize Copy also use Apple's free Command Line Tools (the installer checks; to add them, run `xcode-select --install` in Terminal).
 - Add Perma Link needs your own Perma.cc account; Verify Cites needs a free CourtListener account to check cases (other keys are optional). Find Rule opens your own PDFs: use your own copy of the Bluebook (22d), the TLR Manual (15th), and the Washington OAH Style Manual. The kits contain no text from them and link to no copies. The Washington style sheet is a public court rule: [GR 14 Appendix 1](https://www.courts.wa.gov/court_rules/pdf/GR/GA_GR_14_Appendix.pdf).
 
-### Update or uninstall
+### Update or uninstall (Mac)
 - **Update:** download the new release, quit Word, and run its `Install.command` the same way. It replaces the add-ins and tools and asks before replacing your Note template (your copy is backed up).
 - **Uninstall:** quit Word and run `Uninstall.command` the same way. It asks before removing the Note template, the Source Tracker backups, or a saved Perma.cc or research key. Your documents are never touched.
 
+## Install on Windows (beta)
+
+Beta: tested on one Windows 11 laptop with 64-bit Word. The release notes list what has not been tested on Windows yet.
+
+1. **Download** [`Law-Writing-Kits-Windows.zip`](https://github.com/Macros-for-Law/law-writing-kits-download/releases/latest/download/Law-Writing-Kits-Windows.zip) from the [latest release](https://github.com/Macros-for-Law/law-writing-kits-download/releases/latest).
+2. If you have never opened Word on this PC, open it once. Then **close every Word window**.
+3. Right-click the zip and choose **Extract All**. Open the extracted **Law Writing Kits** folder. (Install does not work from inside the zip.)
+4. **Double-click `Install`** (its type is "Windows Batch File"). A black window opens; answer its question (if any) and press Enter at the end.
+   - Windows asks before running a downloaded file. If you see **"Open File - Security Warning"**, click **Run**. If you see **"Windows protected your PC"** instead, click **More info**, then **Run anyway**.
+   - Install only copies files into your own user folders. It asks for no administrator password and changes no Windows or Word setting.
+5. **Open Word** and click **Enable Content** if a yellow bar asks. The three tabs appear.
+
+Laptops: if F2-F12 change the brightness or volume, hold **Fn** with them, or turn on Fn Lock (often Fn+Esc).
+
+**Read Me First.txt** in the folder is the Windows version of the guide (also attached to each release as Read-Me-First-Windows.txt).
+
+### Requirements (Windows)
+- A Windows 10 or 11 PC with desktop Word (Microsoft 365, or Office 2019 or later). Word in a browser cannot run the kits.
+- Nothing else to install: the zip carries its own private copy of Python (python.org's embeddable package) for Sync Tracker, Add Source, Add Perma Link, Verify Cites, Pull Source, Build Cite Table, Find Rule page jumps, and Anonymize Copy.
+- School accounts: if Word is signed in with a school email, the school's IT settings decide whether macros run. The kits were tested with one school account and worked. If the tabs don't appear, see Troubleshooting in Read Me First.
+
+### Update or uninstall (Windows)
+- **Update:** download the new zip, close Word, extract it, and run its Install. The add-ins you had are kept as "(previous version)" copies in the kit's backups folder.
+- **Uninstall:** close Word and double-click `Uninstall` in the extracted folder. It asks before removing the Note template, your backups, saved keys, or your Kit Settings. Your documents are never touched.
+
+### Shortcuts on Windows
+The table below applies with **Ctrl+Alt** for ⌃⌥ and **Shift** for ⇧. Two keys differ so Word keeps its own: **Add Flag** is Ctrl+Alt+Shift+F (Ctrl+Alt+F stays Insert Footnote) and **Make Em Dash** is Ctrl+Alt+Hyphen (Ctrl+Alt+M stays New Comment).
+
 ### Privacy
-Everything runs on your Mac except tools you start that go online:
+Everything runs on your own computer except tools you start that go online:
 - **Add Perma Link / Perma Setup** send the URL being archived and your Perma.cc API key to api.perma.cc.
 - **Verify Cites / Check Connections** send only each citation's own parts (a case's volume, reporter, and page; a code section; an article title; a URL), never your text, to free public services: CourtListener, GovInfo, eCFR, the Federal Register, the Washington Legislature and courts.wa.gov, Cornell LII, Congress.gov, Regulations.gov, Open States, OpenAlex, Crossref, Open Library, the Internet Archive, and the cited site. Results are cached on your Mac for 30 days.
 - **Preemption Check** (SJTEIL Kit) sends only the search terms you type to api.openalex.org, after you confirm, and opens Google Scholar and SSRN searches with those terms in your browser.
 - **Pull Source** and **Find Rule** open a page in your browser.
 
-Keys are stored only in your Mac's Keychain. Check Cites' reporter rules are generated from Free Law Project's [reporters-db](https://github.com/freelawproject/reporters-db) (BSD 2-Clause).
+Keys are stored only in your Mac's Keychain (on Windows, in Windows Credential Manager). Check Cites' reporter rules are generated from Free Law Project's [reporters-db](https://github.com/freelawproject/reporters-db) (BSD 2-Clause).
 
 ## Report a bug or suggest a feature
 Open the **[Issues](https://github.com/Macros-for-Law/law-writing-kits-download/issues)** tab › **New issue** › *Bug report* or *Feature request*. Please don't paste confidential draft text, client facts, or text copied from the Bluebook, TLR Manual, or course materials; rule numbers are enough.
